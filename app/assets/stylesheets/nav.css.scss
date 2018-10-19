@@ -47,7 +47,7 @@ body{
 }
 .open{
 	transition: .25s;
-	margin-left: 5px;
+	margin-left: 8px;
 	font-size: 28px;
 	cursor: pointer;
 	color: #212121;
@@ -60,7 +60,7 @@ body{
 	box-shadow: 0 1px 3px rgba(0,0,0,0.125);
 	background-color: #fff;
 	position: fixed;
-	padding: 25px;
+	padding: 15px;
 	width: 100%;
 	z-index: 98;
 	top: 0;
@@ -85,15 +85,14 @@ a.menu-link:hover{
 
 #smart{ color: #8dda06; }
 
-main{ padding-top: 90px; }
+main{ padding-top: 72px; }
 
 h1, h2, h3, h4, h5, h6{ color: #212121; }
 
+//MEDIA QUERIES
 @media screen and ( max-height: 450px ) {
 	.sidenav { padding-top: 15px; }
 }
 @media screen and ( max-width: 450px ) {
-	#trigger-wrapper{ padding: 15px; }
 	#logo { margin-left: 40px; }
-	main {padding-top: 70px;}
 }
