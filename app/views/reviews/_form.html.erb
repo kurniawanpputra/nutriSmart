@@ -1,13 +1,10 @@
 <%= form_with(model: review, local: true) do |form| %>
   <% if review.errors.any? %>
-    <div id="error_explanation">
+    <div style="margin-bottom: 16px;">
       <h4><%= pluralize(review.errors.count, "error") %> prohibited this review from being saved:</h4>
-
-      <ul>
       <% review.errors.full_messages.each do |message| %>
-        -> <%= message %><br/>
+       -> <%= message %><br/>
       <% end %>
-      </ul>
     </div>
   <% end %>
   
