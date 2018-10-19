@@ -1,0 +1,17 @@
+<header>
+  <nav>
+    <div id="mySidenav" class="sidenav">
+  	  <span class="closebtn" id="close" onclick="closeNav()">&times;</span>
+  	  <p id="menu-title">nutri<span id="smart">Smart</span></p>
+  	  <%= link_to 'Home', root_path, class: "menu-link" %>
+  	  <a href="#" class="menu-link">About</a>
+  	  <%= link_to 'Foods', foods_path, class: "menu-link" %>
+  	  <a href="#" class="menu-link">Forum</a>
+  	  <a href="#" class="menu-link">Reviews</a>
+  	</div>
+  	<div id="trigger-wrapper">
+  		<span class="open" id="open" onclick="openNav()">&#9776;</span>
+  		<p id="logo">nutri<span id="smart">Smart</span></p>
+  	</div>
+  </nav>
+</header>

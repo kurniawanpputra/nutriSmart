@@ -1,0 +1,17 @@
+<h2 class="title"><%= @food.name %></h2>
+<div class="container">
+  <div class="row" align="center">
+    <div class="col-md-12">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="../assets/<%= @food.img %>">
+        <div class="card-body">
+          <p class="card-text">Description: <%= @food.description %></p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Location: <%= @food.location %></li>
+            <li class="list-group-item" style="padding-bottom: 0;">Phone: <%= @food.phone %></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

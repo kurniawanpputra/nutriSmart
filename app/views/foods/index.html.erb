@@ -1,0 +1,20 @@
+<h2 class="title">Our Foods Of Choice</h2>
+<div class="container">
+  <div class="row" align="center">
+    <% @foods.each do |food| %>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="assets/<%= food.img %>">
+          <div class="card-body">
+            <h5 class="card-title"><%= food.name %></h5>
+            <p class="card-text">To see the complete description of <%= food.name %>, please click Show Details.</p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Location: <%= food.location %></li>
+            </ul>
+            <%= link_to 'Show Details', food_path(food), class: "btn btn-success", style: "margin-top: 18px;" %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
