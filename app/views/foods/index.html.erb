@@ -8,10 +8,7 @@
           <div class="card-body">
             <h5 class="card-title"><%= food.name %></h5>
             <p class="card-text">To see the complete description of <%= food.name %>, please click Show Details.</p>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Location: <%= food.location %></li>
-            </ul>
-            <%= link_to 'Show Details', food_path(food), class: "btn btn-success", style: "margin-top: 18px;" %>
+            <%= link_to 'Show Details', food_path(food), class: "btn btn-success" %>
           </div>
         </div>
       </div>

@@ -1,21 +1,15 @@
-<center>
-  <p id="notice"><%= notice %></p>
-  
-  <p>
-    <strong>Name:</strong>
-    <%= @review.name %>
-  </p>
-  
-  <p>
-    <strong>Email:</strong>
-    <%= @review.email %>
-  </p>
-  
-  <p>
-    <strong>Description:</strong>
-    <%= @review.description %>
-  </p>
-  
-  <%= link_to 'Edit', edit_review_path(@review) %> |
-  <%= link_to 'Back', reviews_path %>
-</center>
+<h2 class="title"><%= @review.name %>'s Review:</h2>
+<div class="container">
+  <div class="row" align="center">
+    <div class="col-md-12">
+      <div class="card" style="width: 18rem;">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Name:<br/><%= @review.name %></li>
+          <li class="list-group-item">E-mail:<br/><%= @review.email %></li>
+          <li class="list-group-item">Description:<br/><%= @review.description %></li>
+        </ul>
+      </div>
+      <%= link_to 'Go Back', reviews_path, class: "btn btn-success", style: "margin-bottom: 16px;" %>
+    </div>
+  </div>
+</div>

@@ -3,8 +3,5 @@
 <center>
   <%= render 'form', review: @review %>
   
-  <br>
-  
-  <%= link_to 'Show', @review %> |
-  <%= link_to 'Back', reviews_path %>
+  <%= link_to 'Go Back', reviews_path, class: "btn btn-info", style: "margin-bottom: 16px;" %>
 </center>
