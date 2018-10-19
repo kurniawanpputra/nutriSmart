@@ -1,0 +1,181 @@
+/* line 1, /home/ubuntu/rails_projects/nutriSmart/app/assets/stylesheets/custom.css.scss */
+.card {
+  float: none;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+/* line 6, /home/ubuntu/rails_projects/nutriSmart/app/assets/stylesheets/custom.css.scss */
+.title {
+  text-align: center;
+  font-weight: bold;
+  padding: 25px;
+  margin: 0;
+}
+
+/* line 12, /home/ubuntu/rails_projects/nutriSmart/app/assets/stylesheets/custom.css.scss */
+.card-title {
+  font-weight: bold;
+}
+
+/* line 15, /home/ubuntu/rails_projects/nutriSmart/app/assets/stylesheets/custom.css.scss */
+.jumbotron {
+  margin-bottom: 0;
+  padding: 40px 32px;
+  background-color: #fff;
+}
+
+/* line 20, /home/ubuntu/rails_projects/nutriSmart/app/assets/stylesheets/custom.css.scss */
+.lead {
+  margin-bottom: 8px;
+}
+
+/* line 23, /home/ubuntu/rails_projects/nutriSmart/app/assets/stylesheets/custom.css.scss */
+#textarea {
+  resize: none;
+}
+/* line 1, /home/ubuntu/rails_projects/nutriSmart/app/assets/stylesheets/nav.css.scss */
+body {
+  margin: 0;
+  color: #212121;
+  font-family: 'Raleway', sans-serif;
+  background-image: url(/assets/pattern-fd3ce95a6673914ad6d7dd98446d89eeb84d87c87e09713484979fac17ec6bce.jpg);
+}
+
+/* line 7, /home/ubuntu/rails_projects/nutriSmart/app/assets/stylesheets/nav.css.scss */
+.sidenav {
+  top: 0;
+  left: 0;
+  width: 0;
+  z-index: 99;
+  height: 100%;
+  position: fixed;
+  padding-top: 60px;
+  overflow-x: hidden;
+  background-color: #fff;
+  transition: .25s linear;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.125);
+}
+
+/* line 20, /home/ubuntu/rails_projects/nutriSmart/app/assets/stylesheets/nav.css.scss */
+.sidenav a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #212121;
+  display: block;
+}
+
+/* line 26, /home/ubuntu/rails_projects/nutriSmart/app/assets/stylesheets/nav.css.scss */
+#menu-title {
+  padding-left: 32px;
+  font-weight: bold;
+  font-size: 28px;
+  color: #212121;
+  display: block;
+  margin-top: 0;
+}
+
+/* line 34, /home/ubuntu/rails_projects/nutriSmart/app/assets/stylesheets/nav.css.scss */
+.sidenav .closebtn {
+  top: 0;
+  right: 25px;
+  padding: 8px;
+  color: #212121;
+  cursor: pointer;
+  font-size: 36px;
+  transition: .25s;
+  position: absolute;
+}
+
+/* line 44, /home/ubuntu/rails_projects/nutriSmart/app/assets/stylesheets/nav.css.scss */
+.sidenav .closebtn:hover {
+  transition: .25s;
+  color: red;
+}
+
+/* line 48, /home/ubuntu/rails_projects/nutriSmart/app/assets/stylesheets/nav.css.scss */
+.open {
+  transition: .25s;
+  margin-left: 8px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #212121;
+}
+
+/* line 55, /home/ubuntu/rails_projects/nutriSmart/app/assets/stylesheets/nav.css.scss */
+.open:hover {
+  color: #8dda06;
+  transition: .25s;
+}
+
+/* line 59, /home/ubuntu/rails_projects/nutriSmart/app/assets/stylesheets/nav.css.scss */
+#trigger-wrapper {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.125);
+  background-color: #fff;
+  position: fixed;
+  padding: 15px;
+  width: 100%;
+  z-index: 98;
+  top: 0;
+}
+
+/* line 68, /home/ubuntu/rails_projects/nutriSmart/app/assets/stylesheets/nav.css.scss */
+a.menu-link {
+  padding: 12px 0 12px 32px;
+  transition: .25s;
+}
+
+/* line 72, /home/ubuntu/rails_projects/nutriSmart/app/assets/stylesheets/nav.css.scss */
+a.menu-link:hover {
+  background-color: #8dda06;
+  padding: 12px 0 12px 38px;
+  transition: .25s;
+}
+
+/* line 77, /home/ubuntu/rails_projects/nutriSmart/app/assets/stylesheets/nav.css.scss */
+#logo {
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 40px;
+  display: inline;
+  font-size: 28px;
+  color: #212121;
+}
+
+/* line 86, /home/ubuntu/rails_projects/nutriSmart/app/assets/stylesheets/nav.css.scss */
+#smart {
+  color: #8dda06;
+}
+
+/* line 88, /home/ubuntu/rails_projects/nutriSmart/app/assets/stylesheets/nav.css.scss */
+main {
+  padding-top: 72px;
+}
+
+/* line 90, /home/ubuntu/rails_projects/nutriSmart/app/assets/stylesheets/nav.css.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #212121;
+}
+
+@media screen and (max-height: 450px) {
+  /* line 93, /home/ubuntu/rails_projects/nutriSmart/app/assets/stylesheets/nav.css.scss */
+  .sidenav {
+    padding-top: 15px;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
