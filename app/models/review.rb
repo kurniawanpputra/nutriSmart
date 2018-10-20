@@ -5,5 +5,5 @@ class Review < ApplicationRecord
             uniqueness: {case_sensitive: false},
             length: {maximum: 100},
             format: {with: VALID_EMAIL_REGEX}
-  validates :description, presence: true, length: {maximum: 200}
+  validates :description, presence: true, length: {maximum: 300}
 end
