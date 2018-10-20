@@ -46,8 +46,8 @@ body{
 	color: red;
 }
 .open{
+	margin-left: 10px;
 	transition: .25s;
-	margin-left: 8px;
 	font-size: 28px;
 	cursor: pointer;
 	color: #212121;
@@ -60,7 +60,7 @@ body{
 	box-shadow: 0 1px 3px rgba(0,0,0,0.125);
 	background-color: #fff;
 	position: fixed;
-	padding: 15px;
+	padding: 20px;
 	width: 100%;
 	z-index: 98;
 	top: 0;
@@ -85,7 +85,7 @@ a.menu-link:hover{
 
 #smart{ color: #8dda06; }
 
-main{ padding-top: 72px; }
+main{ padding-top: 82px; }
 
 h1, h2, h3, h4, h5, h6{ color: #212121; }
 

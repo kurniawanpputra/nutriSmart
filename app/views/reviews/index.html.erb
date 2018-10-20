@@ -1,6 +1,6 @@
 <h2 class="title">Reviews</h2>
 
-<p id="notice" align="center">Notice: <%= notice %></p>
+<p id="notice" align="center">Notice: <span style="color: #0bb200;"><%= notice %></span></p>
 
 <div class="container">
   <div class="row" align="center">
@@ -13,7 +13,7 @@
               <li class="list-group-item">To see <%= review.name %>'s full review, please click Show Review.</li>
             </ul>
             <div style="margin-top: 16px;">
-              <%= link_to 'Show Review', review, class: "btn btn-dark" %>
+              <%= link_to 'Show Review', review, class: "btn btn-success" %>
               <%= link_to 'Edit', edit_review_path(review), class: "btn btn-info" %>
               <%= link_to 'X', review, method: :delete, class: "btn btn-danger" %>
             </div>
