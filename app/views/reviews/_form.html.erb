@@ -3,7 +3,7 @@
     <div style="margin-bottom: 16px; color: #ff2121;">
       <h4 style="color: #ff2121;"><%= pluralize(review.errors.count, "error") %> prohibited this review from being saved:</h4>
       <% review.errors.full_messages.each do |message| %>
-       -> <%= message %><br/>
+        > <%= message %><br/>
       <% end %>
     </div>
   <% end %>
