@@ -3,8 +3,8 @@
   <div class="container">
     <div class="card bg-light col-md-6">
       <div class="card-body" align="left">
-        <div style="color: #ff2121;">
-          <h4 style="color: #ff2121;"><b><%= pluralize(review.errors.count, "error") %> occurred:</b></h4>
+        <div style="color: #d9534f;">
+          <h4 style="color: #d9534f;"><b><%= pluralize(review.errors.count, "error") %> occurred:</b></h4>
           <% review.errors.full_messages.each_with_index do |message, index| %>
             <%= index+1 %>. <%= message %><br/>
           <% end %>
