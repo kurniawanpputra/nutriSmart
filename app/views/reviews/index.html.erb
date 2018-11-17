@@ -6,16 +6,17 @@
   <div class="row" align="center">
     <% @reviews.each do |review| %>
       <div class="col-md-4">
-        <div class="card" style="width: 18rem;">
+        <div class="card">
           <div class="card-body">
             <h5 class="card-title">Review From <%= review.name %></h5>
             <ul class="list-group list-group-flush">
+              <li class="list-group-item">Date Posted: <%= review.created_at.to_date %></li>
               <li class="list-group-item">To see <%= review.name %>'s full review, please click Show Review.</li>
             </ul>
             <div style="margin-top: 16px;">
               <%= link_to 'Show Review', review, class: "btn btn-success" %>
-              <%= link_to 'Edit', edit_review_path(review), class: "btn btn-info" %>
-              <%= link_to 'X', review, method: :delete, class: "btn btn-danger" %>
+              <!--<%= link_to 'Edit', edit_review_path(review), class: "btn btn-info" %>-->
+              <!--<%= link_to 'X', review, method: :delete, class: "btn btn-danger" %>-->
             </div>
           </div>
         </div>
@@ -25,5 +26,5 @@
 </div>
 
 <div align="center">
-  <%= link_to 'New Review', new_review_path, class: "btn btn-link", style: "margin-bottom: 16px;"%>
+  <%= link_to 'Add Review', new_review_path, class: "btn btn-outline-info btn-sm", style: "margin-bottom: 16px;"%>
 </div>
