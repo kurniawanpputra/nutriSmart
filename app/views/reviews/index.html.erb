@@ -10,8 +10,8 @@
           <div class="card-body">
             <h5 class="card-title">Review From <%= review.name %></h5>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">Created <%= time_ago_in_words(review.created_at) %> ago</li>
               <li class="list-group-item">To see <%= review.name %>'s full review, please click Show Review.</li>
+              <li class="list-group-item">Added <%= time_ago_in_words(review.created_at) %> ago</li>
             </ul>
             <div style="margin-top: 16px;">
               <%= link_to 'Show Review', review, class: "btn btn-success" %>
