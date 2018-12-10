@@ -1,5 +1,6 @@
 class ReviewsController < ApplicationController
-  before_action :set_review, only: [:show, :edit, :update, :destroy]
+  # before_action :set_review, only: [:show, :edit, :update, :destroy]
+  before_action :set_review, only: [:show, :destroy]
   # GET /reviews
   # GET /reviews.json
   def index
@@ -17,8 +18,8 @@ class ReviewsController < ApplicationController
   end
 
   # GET /reviews/1/edit
-  # def edit
-  # end
+  def edit
+  end
 
   # POST /reviews
   # POST /reviews.json
