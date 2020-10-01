@@ -12,5 +12,5 @@
 6. To shutdown the server, Ctrl+C in the command line
 
 ==DEPLOYMENT
-* This project is already online and still in development
+* This project is already online but it's development is stopped
 * Can be accessed at nutrismart.herokuapp.com
